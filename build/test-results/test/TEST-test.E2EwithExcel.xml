@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.E2EwithExcel" tests="2" skipped="0" failures="0" errors="0" timestamp="2023-05-03T15:57:24" hostname="AR-NB-726" time="204.303">
+  <properties/>
+  <testcase name="test1" classname="test.E2EwithExcel" time="96.247"/>
+  <testcase name="test" classname="test.E2EwithExcel" time="102.991"/>
+  <system-out><![CDATA[PasÃ³ carga de envio
+pasÃ³ cotizar y pagar con tarjeta
+pasÃ³ la consulta del envio
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 112.0.5615.28 (e01c41304994a51cedfb5f0fac134687ba993bfb-refs/branch-heads/5615@{#494}) on port 29689
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 03, 2023 12:57:19 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 112, so returning the closest version found: 109
+Starting ChromeDriver 112.0.5615.28 (e01c41304994a51cedfb5f0fac134687ba993bfb-refs/branch-heads/5615@{#494}) on port 8125
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+may. 03, 2023 12:59:01 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+ADVERTENCIA: Unable to find an exact match for CDP version 112, so returning the closest version found: 109
+]]></system-err>
+</testsuite>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Drivers" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/Drivers/chromedriver112.exe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Drivers/geckodriver.exe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Drivers/msedgedriver.exe" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/pages/PageWelcome.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/test/E2EwithExcel.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/test/ReadExcelFile.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/test/WhriteExcelFile.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/src/test/java/utils/Helpers.java" charset="windows-1252" />
+  </component>
+</project>
