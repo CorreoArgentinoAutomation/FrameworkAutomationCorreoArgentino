@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'io.qameta.allure' version '2.10.0'
 }
 
 group 'org.example'
@@ -10,32 +11,17 @@ repositories {
 }
 
 dependencies {
-    //JUnit
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-params:5.9.2'
-    testImplementation 'org.junit.platform:junit-platform-launcher:1.9.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
-    testImplementation 'org.junit.platform:junit-platform-suite-api:1.9.2'
-    testImplementation 'org.junit.vintage:junit-vintage-engine:5.9.2'
+
+    // Dependencias de Selenium
+    implementation 'org.seleniumhq.selenium:selenium-java:4.8.0'
+    implementation 'io.github.bonigarcia:webdrivermanager:5.0.3'
+    implementation 'org.seleniumhq.selenium:selenium-chrome-driver:4.8.0'
+
+    // Dependencia de TestNG
+    testImplementation 'org.testng:testng:7.7.1'
 
     // https://mvnrepository.com/artifact/io.cucumber/cucumber-java
     implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.11.1'
-
-    // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
-    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.2'
-
-    // https://mvnrepository.com/artifact/org.testng/testng
-    testImplementation group: 'org.testng', name: 'testng', version: '7.7.1'
-
-    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
-    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.8.0'
-
-    // https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager
-    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.3.2'
-
-    // https://mvnrepository.com/artifact/io.github.bonigarcia/selenium-jupiter
-    implementation group: 'io.github.bonigarcia', name: 'selenium-jupiter', version: '4.3.3'
 
     // https://mvnrepository.com/artifact/org.apache.poi/poi
     implementation group: 'org.apache.poi', name: 'poi', version: '5.2.3'
@@ -63,9 +49,9 @@ dependencies {
 
     implementation 'com.google.zxing:javase:3.5.1'
     implementation 'com.google.zxing:core:3.5.1'
+
 }
 
 test {
-    useJUnitPlatform()
     useTestNG()
 }
