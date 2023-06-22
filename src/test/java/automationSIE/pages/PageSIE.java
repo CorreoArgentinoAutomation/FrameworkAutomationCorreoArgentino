@@ -1,10 +1,13 @@
 package automationSIE.pages;
+import framework.utils.ReadExcelFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import framework.engine.selenium.SeleniumWrapper;
 
+import java.io.IOException;
+import java.util.List;
 import java.util.Set;
 
 public class PageSIE extends SeleniumWrapper {
@@ -234,34 +237,31 @@ public class PageSIE extends SeleniumWrapper {
         }
         esperarXsegundos(1000);
     }
-    public void agregarDestinatarios(){
+    public void agregarDestinatarios() {
         click(btnAgregar);
         esperarXsegundos(4000);
-        writeText(textName,"Carlos Navarro");
+        writeText(textName, "Carlos Navarro");
         esperarXsegundos(1000);
         click(selectProvincia);
         esperarXsegundos(3000);
         click(laRiojaLocator);
         esperarXsegundos(1500);
-        write("//input[@id='city']","LA RIOJA");
+        write("//input[@id='city']", "LA RIOJA");
         esperarXsegundos(1500);
-        write("//input[@id='street']","LA TROYA");
+        write("//input[@id='street']", "LA TROYA");
         esperarXsegundos(1500);
-        write("//input[@id='streetNumber']","110");
+        write("//input[@id='streetNumber']", "110");
         esperarXsegundos(1500);
-        write("//input[@id='zipCode']","5300");
+        write("//input[@id='zipCode']", "5300");
         esperarXsegundos(2000);
         click(By.id("apartment"));
         esperarXsegundos(1000);
         try {
             click(btnGuardar);
-            }catch (Exception e){
+        } catch (Exception e) {
             click(btnGuardar);
-            }
+        }
     }
 }
-
-
-
 
 
